@@ -11,14 +11,14 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        visible: false
-      };
-    },
-		created(){
-			console.log(this.$attrs,this.$listeners)
-		}
-  };
+export default {
+  data() {
+    return {
+      visible: false
+    }
+  },
+  created() {
+    console.log(this.$attrs, this.$listeners)
+  }
+}
 </script>

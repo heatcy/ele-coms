@@ -36,7 +36,7 @@ export default {
       }, {
         date: '2016-05-03',
         name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
+        address: '上海市普陀区金沙江路 1516 弄'
       }]
     }
   },
@@ -47,11 +47,11 @@ export default {
 
         },
         props: {
-          data: this.data,
+          data: this.data
         },
         style: {
           width: '100%'
-        },
+        }
       }, this.list.map(item => {
         return h('el-table-column', {
           props: {
@@ -62,13 +62,13 @@ export default {
           },
           scopedSlots: {
             // row,column,$index,store,_self
-            default: ({ row, column, $index, }) => {
+            default: ({ row, column, $index }) => {
               if (typeof item.slot === 'function') {
                 return item.slot(h, { row, column, $index })
               }
               return h('span', row[item.prop])
             }
-          },
+          }
         })
       }))
     ])

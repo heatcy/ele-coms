@@ -24,14 +24,14 @@ export default {
     // HelloWorld,
     popper
   },
-  data(){
+  data() {
     return {
-      title:'popper标题',
+      title: 'popper标题',
       width: '100'
     }
   },
-  methods:{
-    showPop(){
+  methods: {
+    showPop() {
       console.log('show')
     }
   }
